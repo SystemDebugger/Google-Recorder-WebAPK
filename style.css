@@ -1,3 +1,40 @@
-html {
-  
+@font-face {
+font-family: 'FlexRounded';
+src: url('./flexrounded.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+html, body {
+font-family: 'FlexRounded', sans-serif;
+}
+@media (prefers-color-scheme: light) {
+:root {
+--bg: #ffffff;
+--fg: #000000;
+}
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--fg: #000000;
+--bg: #ffffff;
+}
+}
+body {
+background: var(--bg);
+color: var(--fg);
+}
+
+/*table {
+margin-left: auto;
+margin-right: auto;
+}*/
+
+td {
+padding-bottom: 37.5px;
+font-size: 25px;
+}
+
+#greeting {
+margin: auto;
+width: fit-content;
 }
